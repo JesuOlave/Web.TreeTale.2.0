@@ -1,3 +1,11 @@
+
+.logo-navbar{
+    width: 60px
+
+}
 .bg-estilo-jesu{
-    color: #599443;
+    background-color: rgb(159, 211, 166);
+}
+.boton-search{
+    color: black;
 }
