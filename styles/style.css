@@ -1,6 +1,20 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 * {
   margin: 0;
   padding: 0;
+}
+
+.bg-estilo-jesu {
+  background-color: rgb(170, 201, 117);
+}
+
+.logo-navbar {
+  width: 65px;
+  height: 65px;
+}
+
+.boton-search {
+  color: rgb(58, 58, 58);
 }
 
 /*# sourceMappingURL=style.css.map */
