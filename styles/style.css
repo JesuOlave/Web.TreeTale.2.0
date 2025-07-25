@@ -9,12 +9,23 @@
 }
 
 .logo-navbar {
-  width: 65px;
-  height: 65px;
+  width: 75px;
 }
 
 .boton-search {
   color: rgb(58, 58, 58);
+}
+
+.estilo-footer-jesu {
+  background-color: rgb(170, 201, 117);
+}
+
+.logo-navbar {
+  width: 95px;
+}
+
+.btn-estilo-jesu {
+  background-color: rgb(255, 255, 255);
 }
 
 /*# sourceMappingURL=style.css.map */
