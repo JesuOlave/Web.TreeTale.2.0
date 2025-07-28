@@ -21,6 +21,20 @@
   margin: 30px;
 }
 
+.card-estilo-jesu {
+  max-width: 1200px;
+  width: 100%;
+  height: auto;
+}
+
+.texto-card-jesu {
+  align-items: center;
+}
+
+.titulo-parrafo {
+  text-align: center;
+}
+
 .estilo-footer-jesu {
   background-color: rgb(170, 201, 117);
 }
