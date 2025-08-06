@@ -5,15 +5,27 @@
 }
 
 .bg-estilo-jesu {
-  background-color: rgb(170, 201, 117);
+  background-color: #F3F1EA;
 }
 
 .logo-navbar {
   width: 75px;
 }
 
-.boton-search {
-  color: rgb(58, 58, 58);
+.boton-secundario {
+  background-color: #5A8BA0;
+  color: white;
+  border-color: #D7D7D7;
+}
+.boton-secundario:hover {
+  color: white;
+  background-color: #476D82;
+  border-color: #D7D7D7;
+}
+
+.buscador:focus {
+  box-shadow: #D7D7D7;
+  outline: none;
 }
 
 .titulo-page {
@@ -33,6 +45,27 @@
 
 .titulo-parrafo {
   text-align: center;
+}
+
+.banner-estilo-jesu {
+  border: #F3F1EA;
+}
+
+.texto-card-banner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding-left: 2rem;
+  max-width: 60%;
+}
+
+.card-title {
+  font-size: 4.5rem;
+}
+
+.h2 {
+  font-size: 2rem;
 }
 
 .estilo-footer-jesu {

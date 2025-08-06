@@ -1,3 +1,5 @@
+@use "../utilities/variables";
+
 .titulo-page{
     text-align: center;
     margin: 30px;
@@ -12,5 +14,24 @@
 }
 .titulo-parrafo{
     text-align: center;
+}
+
+//Banner principal//
+.banner-estilo-jesu{
+    border: variables.$color-fondo-alternativo ;
+}
+.texto-card-banner{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding-left: 2rem;
+    max-width: 60%;
+}
+.card-title{
+    font-size: 4.5rem;
+}
+.h2{
+    font-size: 2rem;
 }
 

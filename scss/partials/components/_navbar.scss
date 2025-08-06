@@ -1,11 +1,24 @@
+@use "../utilities/variables";
 
 .bg-estilo-jesu{
-    background-color: rgb(170, 201, 117);
+    background-color: variables.$color-fondo-alternativo;
 }
 .logo-navbar{
     width: 75px;
 }
 
-.boton-search{
-    color: rgb(58, 58, 58);
+.boton-secundario{
+    background-color: variables.$color-boton-secundario;
+    color: #FFFF;
+    border-color: variables.$color-bordes-y-lineas ;
+    &:hover{
+        color:#FFFF ;
+        background-color: variables.$hover-boton-secundario;
+         border-color: variables.$color-bordes-y-lineas;
+    }
 }
+.buscador:focus{
+box-shadow: variables.$color-bordes-y-lineas;
+outline: none;
+}
+
