@@ -1,0 +1,50 @@
+@use "../utilities/variables";
+@import "../utilities/mixin";
+
+
+.info-card-container{
+    .info-card{
+        @include flex(column, center, center);
+        color: variables.$color-texto-base;
+
+        h3{ font-size: 35px;
+            margin: 9px;
+        }
+        p{ font-size: 20px;
+            margin: 9px;
+
+        }
+        .boton-primario{
+            margin: 15px;
+            
+            
+
+        }
+
+    }
+}
+
+.card-mediana{
+    max-width: 1200px;
+    width: 100%;
+    height: auto;
+    margin-bottom: 4rem;
+    margin-top: 4rem;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    border: 1px solid variables.$color-bordes-y-lineas;
+    color: variables.$color-texto-base;
+ 
+    .card-body{
+    padding: 3rem;
+    h3{ font-size: 35px;
+        
+    }
+    p{font-size: 19px;
+            margin-top: 20px;
+    }
+
+}
+}
+

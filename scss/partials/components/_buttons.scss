@@ -1,1 +1,26 @@
 @use "../utilities/variables";
+
+.boton{
+    width: 30%;
+    margin: auto;
+    font-weight: 600;
+    color: white;
+    border-color: variables.$color-fondo-alternativo;
+}
+
+.boton-primario{
+@extend .boton;
+background-color: variables.$color-boton-principal;
+&:hover{
+    background-color: variables.$hover-boton-principal;
+    border-color: variables.$color-fondo-alternativo;
+} 
+&:active{
+background-color: variables.$active-boton-principal ;
+}
+padding-top: 0.65rem;
+padding-bottom: 0.65rem;
+font-size: 18px;
+box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+

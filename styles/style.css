@@ -33,12 +33,6 @@
   margin: 30px;
 }
 
-.card-estilo-jesu {
-  max-width: 1200px;
-  width: 100%;
-  height: auto;
-}
-
 .texto-card-jesu {
   align-items: center;
 }
@@ -78,6 +72,71 @@
 
 .btn-estilo-jesu {
   background-color: rgb(255, 255, 255);
+}
+
+.boton, .boton-primario {
+  width: 30%;
+  margin: auto;
+  font-weight: 600;
+  color: white;
+  border-color: #F3F1EA;
+}
+
+.boton-primario {
+  background-color: #2E7D5E;
+  padding-top: 0.65rem;
+  padding-bottom: 0.65rem;
+  font-size: 18px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+.boton-primario:hover {
+  background-color: #25664D;
+  border-color: #F3F1EA;
+}
+.boton-primario:active {
+  background-color: #1C523C;
+}
+
+.info-card-container .info-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #4B4F46;
+}
+.info-card-container .info-card h3 {
+  font-size: 35px;
+  margin: 9px;
+}
+.info-card-container .info-card p {
+  font-size: 20px;
+  margin: 9px;
+}
+.info-card-container .info-card .boton-primario {
+  margin: 15px;
+}
+
+.card-mediana {
+  max-width: 1200px;
+  width: 100%;
+  height: auto;
+  margin-bottom: 4rem;
+  margin-top: 4rem;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border: 1px solid #D7D7D7;
+  color: #4B4F46;
+}
+.card-mediana .card-body {
+  padding: 3rem;
+}
+.card-mediana .card-body h3 {
+  font-size: 35px;
+}
+.card-mediana .card-body p {
+  font-size: 19px;
+  margin-top: 20px;
 }
 
 /*# sourceMappingURL=style.css.map */
