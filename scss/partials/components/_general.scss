@@ -32,3 +32,40 @@
 }
 
 //Tabla//
+.tabla-estilo{
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 2rem;
+  
+    table{
+        width: 100%;
+        border-collapse: separate;
+        border-spacing: 0 1rem;
+        
+        th{
+            font-size: 34px;
+            font-weight: 600;
+            color: variables.$color-texto-base;
+            padding-bottom: 1rem;
+    
+        }
+        }
+     td{
+        padding: 1rem;
+        vertical-align: top;
+            h3{
+                font-size: 27px;
+                margin-bottom: 0.5rem;
+                color: variables.$color-texto-base;
+            }
+            p{
+                font-size: 19px;
+                line-height: 1.5;
+                color: variables.$color-texto-base;
+            }
+
+            }
+        }
+    
+
+    
