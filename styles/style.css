@@ -155,9 +155,10 @@
   margin-top: 4rem;
   border-radius: 20px;
   overflow: hidden;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  border: 1px solid #D7D7D7;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border: none;
   color: #4B4F46;
+  background-color: #F3F1EA;
 }
 .card-mediana .card-body {
   padding: 3rem;
@@ -168,6 +169,41 @@
 .card-mediana .card-body p {
   font-size: 19px;
   margin-top: 20px;
+}
+
+.card-horizontal {
+  width: 100%;
+  border: none;
+  border-radius: 0%;
+  overflow: hidden;
+  text-align: center;
+}
+.card-horizontal .card-img-top {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.card-horizontal .card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  background-color: #F3F1EA;
+  color: #4B4F46;
+  padding: 4rem;
+}
+.card-horizontal .card-body h3 {
+  font-size: 35px;
+  margin-bottom: 1.5rem;
+}
+.card-horizontal .card-body p {
+  font-size: 19px;
+  margin-bottom: 1.5rem;
+}
+.card-horizontal .card-body .boton-primario {
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
 }
 
 /*# sourceMappingURL=style.css.map */

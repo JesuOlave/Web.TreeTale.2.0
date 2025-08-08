@@ -32,9 +32,10 @@
     margin-top: 4rem;
     border-radius: 20px;
     overflow: hidden;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-    border: 1px solid variables.$color-bordes-y-lineas;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    border: none;
     color: variables.$color-texto-base;
+    background-color: variables.$color-fondo-alternativo;
  
     .card-body{
     padding: 3rem;
@@ -48,3 +49,38 @@
 }
 }
 
+// Card horizontal img+texto+boton //
+
+.card-horizontal{
+    width: 100%;
+    border: none;
+    border-radius: 0%;
+    overflow: hidden;
+    text-align: center;
+    .card-img-top{
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+    .card-body{
+        @include flex(column, center, center);
+        padding: 2rem;
+        background-color: variables.$color-fondo-alternativo;
+        color: variables.$color-texto-base;
+        padding: 4rem;
+
+        h3{
+            font-size: 35px;
+            margin-bottom: 1.5rem;
+        }
+        p{
+            font-size: 19px;
+            margin-bottom: 1.5rem;
+
+        }
+        .boton-primario{
+            margin-top: 1.5rem;
+            margin-bottom: 1rem;
+        }
+    }
+}
