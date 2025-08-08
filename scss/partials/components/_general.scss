@@ -1,9 +1,6 @@
 @use "../utilities/variables";
 
-.titulo-page{
-    text-align: center;
-    margin: 30px;
-}
+
 
 .texto-card-jesu{
     align-items: center;
@@ -67,5 +64,23 @@
             }
         }
     
+//encabezado de pages//
+.titulo-page{
+    text-align: center;
+    margin-top: 2.5rem;
+    margin-bottom: 2rem;
+    max-width: 1000px;
+    color: variables.$color-texto-base;
 
+
+    h2{
+        font-size: 3.5rem;
+        margin-bottom: 2rem;
+
+    }
+    p{
+        font-size: 19px;
+
+    }
+}
     

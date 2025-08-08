@@ -9,7 +9,7 @@
 }
 
 .logo-navbar {
-  width: 75px;
+  width: 95px;
 }
 
 .boton-secundario {
@@ -26,11 +26,6 @@
 .buscador:focus {
   box-shadow: #D7D7D7;
   outline: none;
-}
-
-.titulo-page {
-  text-align: center;
-  margin: 30px;
 }
 
 .texto-card-jesu {
@@ -93,16 +88,43 @@
   color: #4B4F46;
 }
 
+.titulo-page {
+  text-align: center;
+  margin-top: 2.5rem;
+  margin-bottom: 2rem;
+  max-width: 1000px;
+  color: #4B4F46;
+}
+.titulo-page h2 {
+  font-size: 3.5rem;
+  margin-bottom: 2rem;
+}
+.titulo-page p {
+  font-size: 19px;
+}
+
 .estilo-footer-jesu {
-  background-color: rgb(170, 201, 117);
+  background-color: #F3F1EA;
+  color: #4B4F46;
+  border-top: 1px solid #D7D7D7;
 }
-
-.logo-navbar {
-  width: 95px;
+.estilo-footer-jesu .logo-footer {
+  max-width: 150px;
 }
-
-.btn-estilo-jesu {
-  background-color: rgb(255, 255, 255);
+.estilo-footer-jesu h4 {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 1.2rem;
+}
+.boton-secundario {
+  background-color: #5A8BA0;
+  color: white;
+  border-color: #D7D7D7;
+}
+.boton-secundario:hover {
+  color: white;
+  background-color: #476D82;
+  border-color: #D7D7D7;
 }
 
 .boton, .boton-primario {

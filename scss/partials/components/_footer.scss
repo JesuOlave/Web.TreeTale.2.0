@@ -1,30 +1,20 @@
 @use "../utilities/variables";
 
-
 .estilo-footer-jesu{
-    background-color: rgb(170, 201, 117);
-}
-.logo-navbar{
-    width: 95px
-}
-.btn-estilo-jesu{
-    background-color: rgb(255, 255, 255);
-}
+    background-color: variables.$color-fondo-alternativo;
+    color: variables.$color-texto-base;
+    border-top: 1px solid variables.$color-bordes-y-lineas;
+    
 
-.estilo-footer-jesu{
-    .logo-navbar{
-
+    .logo-footer{
+        max-width: 150px;
     }
     h4{
-
+        font-size: 24px;
+        font-weight: 600;
+        margin-bottom: 1.2rem;
     }
-    ul{
-        li{
-            a{
-
-            }
-        }
-    }
+    
     .newsletter{
          form{
             h4{
@@ -42,4 +32,14 @@
 
     }
     
+}
+.boton-secundario{
+    background-color: variables.$color-boton-secundario;
+    color: #FFFF;
+    border-color: variables.$color-bordes-y-lineas ;
+    &:hover{
+        color:#FFFF ;
+        background-color: variables.$hover-boton-secundario;
+         border-color: variables.$color-bordes-y-lineas;
+    }
 }
