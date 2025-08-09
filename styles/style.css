@@ -32,10 +32,6 @@
   align-items: center;
 }
 
-.titulo-parrafo {
-  text-align: center;
-}
-
 .banner-estilo-jesu {
   border: #F3F1EA;
 }
@@ -150,6 +146,9 @@
   background-color: #1C523C;
 }
 
+.info-card-container {
+  text-align: center;
+}
 .info-card-container .info-card {
   display: flex;
   flex-direction: column;
@@ -162,7 +161,7 @@
   margin: 9px;
 }
 .info-card-container .info-card p {
-  font-size: 20px;
+  font-size: 19px;
   margin: 9px;
 }
 .info-card-container .info-card .boton-primario {
@@ -172,7 +171,6 @@
 .card-mediana {
   max-width: 1200px;
   width: 100%;
-  height: auto;
   margin-bottom: 4rem;
   margin-top: 4rem;
   border-radius: 20px;
@@ -181,6 +179,18 @@
   border: none;
   color: #4B4F46;
   background-color: #F3F1EA;
+}
+.card-mediana .row {
+  height: 100%;
+}
+.card-mediana .col-md-6 {
+  height: 100%;
+}
+.card-mediana img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  display: block;
 }
 .card-mediana .card-body {
   padding: 3rem;
@@ -226,6 +236,29 @@
 .card-horizontal .card-body .boton-primario {
   margin-top: 1.5rem;
   margin-bottom: 1rem;
+}
+
+.card-para-blogs {
+  padding: 1.5rem;
+}
+
+.card-jesu {
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border: none;
+  background-color: #F3F1EA;
+  color: #4B4F46;
+}
+.card-jesu .card-body-jesu {
+  padding: 1.5rem;
+}
+.card-jesu .card-body-jesu .card-title {
+  font-size: 35px;
+}
+.card-jesu .card-body-jesu .card-text {
+  font-size: 19px;
+  margin-top: 20px;
 }
 
 /*# sourceMappingURL=style.css.map */

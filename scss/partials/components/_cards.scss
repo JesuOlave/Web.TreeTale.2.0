@@ -1,8 +1,9 @@
 @use "../utilities/variables";
 @import "../utilities/mixin";
 
-
+//Bloque titulo+parrafo+boton-principal//
 .info-card-container{
+    text-align: center;
     .info-card{
         @include flex(column, center, center);
         color: variables.$color-texto-base;
@@ -10,24 +11,21 @@
         h3{ font-size: 35px;
             margin: 9px;
         }
-        p{ font-size: 20px;
+        p{ font-size: 19px;
             margin: 9px;
 
         }
         .boton-primario{
             margin: 15px;
             
-            
-
         }
-
+    
     }
 }
 
 .card-mediana{
     max-width: 1200px;
     width: 100%;
-    height: auto;
     margin-bottom: 4rem;
     margin-top: 4rem;
     border-radius: 20px;
@@ -36,6 +34,21 @@
     border: none;
     color: variables.$color-texto-base;
     background-color: variables.$color-fondo-alternativo;
+
+    .row {
+    height: 100%;
+  }
+
+  .col-md-6 {
+    height: 100%;
+  }
+    
+    img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    display: block;
+    }
  
     .card-body{
     padding: 3rem;
@@ -84,3 +97,28 @@
         }
     }
 }
+//Card pequeña para blogs//
+.card-para-blogs{
+    padding: 1.5rem;}
+    
+.card-jesu{
+      
+        border-radius: 20px;
+        overflow: hidden;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        border: none;
+        background-color: variables.$color-fondo-alternativo;
+        color: variables.$color-texto-base;
+       
+        .card-body-jesu{
+            padding: 1.5rem;
+
+            .card-title{
+                font-size: 35px;
+            }
+            .card-text{
+             font-size: 19px;
+             margin-top: 20px;
+            }
+        }
+    }
