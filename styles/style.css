@@ -147,7 +147,14 @@
 }
 
 .info-card-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   text-align: center;
+  background-color: #E8F0ED;
+  width: 100%;
+  height: 300px;
 }
 .info-card-container .info-card {
   display: flex;
@@ -155,6 +162,7 @@
   justify-content: center;
   align-items: center;
   color: #4B4F46;
+  width: 1150px;
 }
 .info-card-container .info-card h3 {
   font-size: 35px;
@@ -176,7 +184,7 @@
   border-radius: 20px;
   overflow: hidden;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  border: none;
+  border: 1px solid #E8E8E8;
   color: #4B4F46;
   background-color: #F3F1EA;
 }
@@ -221,7 +229,7 @@
   justify-content: center;
   align-items: center;
   padding: 2rem;
-  background-color: #F3F1EA;
+  background-color: white;
   color: #4B4F46;
   padding: 4rem;
 }
@@ -239,26 +247,85 @@
 }
 
 .card-para-blogs {
-  padding: 1.5rem;
+  padding: 2rem;
 }
-
-.card-jesu {
+.card-para-blogs header {
+  margin: 1rem;
+  text-align: center;
+}
+.card-para-blogs header h2 {
+  text-transform: uppercase;
+  font-size: 2rem;
+  font-weight: 600;
+  color: #4B4F46;
+  margin-bottom: 1.5rem;
+}
+.card-para-blogs header p {
+  font-size: 19px;
+  color: #4B4F46;
+  margin-bottom: 3rem;
+  max-width: 1200px;
+}
+.card-para-blogs .card-jesu {
   border-radius: 20px;
   overflow: hidden;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  border: none;
+  border: 1px solid #E8E8E8;
   background-color: #F3F1EA;
   color: #4B4F46;
 }
-.card-jesu .card-body-jesu {
+.card-para-blogs .card-jesu .card-body-jesu {
   padding: 1.5rem;
 }
-.card-jesu .card-body-jesu .card-title {
+.card-para-blogs .card-jesu .card-body-jesu .card-title {
   font-size: 35px;
 }
-.card-jesu .card-body-jesu .card-text {
+.card-para-blogs .card-jesu .card-body-jesu .card-text {
   font-size: 19px;
   margin-top: 20px;
+}
+
+.container header {
+  margin: 1rem;
+  text-align: center;
+}
+.container header .seccion-titulo {
+  text-transform: uppercase;
+  font-size: 2rem;
+  font-weight: 600;
+  color: #4B4F46;
+  margin-bottom: 1.5rem;
+}
+.container header .seccion-subtitulo {
+  font-size: 19px;
+  color: #4B4F46;
+  margin-bottom: 3rem;
+  max-width: 1200px;
+}
+.container .row .col .card-chica {
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border: 1px solid #E8E8E8;
+  background-color: #F3F1EA;
+  color: #4B4F46;
+}
+.container .row .col .card-chica .card-title {
+  font-size: 30px;
+}
+
+.carrusel-jesu .container {
+  max-width: 950px;
+}
+.carrusel-jesu .container .card {
+  color: #4B4F46;
+}
+.carrusel-jesu .container .card .card-header {
+  font-size: 25px;
+  background-color: #E8F0ED;
+}
+.carrusel-jesu .container .card .card-body {
+  background-color: #F3F1EA;
 }
 
 /*# sourceMappingURL=style.css.map */

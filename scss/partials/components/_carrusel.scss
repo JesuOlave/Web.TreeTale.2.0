@@ -1,0 +1,24 @@
+@use "../utilities/variables";
+@import "../utilities/mixin";
+
+.carrusel-jesu{
+    .container{
+        max-width: 950px;
+        .card{
+            color: variables.$color-texto-base;
+
+            .card-header{
+                font-size: 25px;
+                background-color: variables.$color-fondo-alternativo-dos;
+
+
+            }
+            .card-body{
+                background-color: variables.$color-fondo-alternativo ;
+
+            }
+        }
+    }
+
+
+}

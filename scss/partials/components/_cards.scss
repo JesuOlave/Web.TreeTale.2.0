@@ -2,123 +2,211 @@
 @import "../utilities/mixin";
 
 //Bloque titulo+parrafo+boton-principal//
-.info-card-container{
+.info-card-container {
+    @include flex (column, center, center);
     text-align: center;
-    .info-card{
+    background-color: variables.$color-fondo-alternativo-dos;
+    width: 100%;
+    height: 300px;
+
+    .info-card {
         @include flex(column, center, center);
         color: variables.$color-texto-base;
+        width: 1150px;
 
-        h3{ font-size: 35px;
+        h3 {
+            font-size: 35px;
             margin: 9px;
         }
-        p{ font-size: 19px;
+
+        p {
+            font-size: 19px;
             margin: 9px;
 
         }
-        .boton-primario{
+
+        .boton-primario {
             margin: 15px;
-            
+
         }
-    
+
     }
 }
 
-.card-mediana{
+.card-mediana {
     max-width: 1200px;
     width: 100%;
     margin-bottom: 4rem;
     margin-top: 4rem;
     border-radius: 20px;
     overflow: hidden;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-    border: none;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border: 1px solid variables.$borde-suave-card; 
     color: variables.$color-texto-base;
     background-color: variables.$color-fondo-alternativo;
 
     .row {
-    height: 100%;
-  }
+        height: 100%;
+    }
 
-  .col-md-6 {
-    height: 100%;
-  }
-    
+    .col-md-6 {
+        height: 100%;
+    }
+
     img {
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-    display: block;
-    }
- 
-    .card-body{
-    padding: 3rem;
-    h3{ font-size: 35px;
-        
-    }
-    p{font-size: 19px;
-            margin-top: 20px;
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        display: block;
     }
 
-}
+    .card-body {
+        padding: 3rem;
+
+        h3 {
+            font-size: 35px;
+
+        }
+
+        p {
+            font-size: 19px;
+            margin-top: 20px;
+        }
+
+    }
 }
 
 // Card horizontal img+texto+boton //
 
-.card-horizontal{
+.card-horizontal {
     width: 100%;
     border: none;
     border-radius: 0%;
     overflow: hidden;
     text-align: center;
-    .card-img-top{
+
+    .card-img-top {
         width: 100%;
         height: auto;
         display: block;
     }
-    .card-body{
+
+    .card-body {
         @include flex(column, center, center);
         padding: 2rem;
-        background-color: variables.$color-fondo-alternativo;
+        background-color: white;
         color: variables.$color-texto-base;
         padding: 4rem;
 
-        h3{
+        h3 {
             font-size: 35px;
             margin-bottom: 1.5rem;
         }
-        p{
+
+        p {
             font-size: 19px;
             margin-bottom: 1.5rem;
 
         }
-        .boton-primario{
+
+        .boton-primario {
             margin-top: 1.5rem;
             margin-bottom: 1rem;
         }
     }
 }
+
 //Card pequeña para blogs//
-.card-para-blogs{
-    padding: 1.5rem;}
-    
-.card-jesu{
-      
+.card-para-blogs {
+    padding: 2rem;
+
+    header {
+        margin: 1rem;
+        text-align: center;
+
+        h2 {
+            text-transform: uppercase;
+            font-size: 2rem;
+            font-weight: 600;
+            color: variables.$color-texto-base;
+            margin-bottom: 1.5rem;
+        }
+
+        p {
+            font-size: 19px;
+            color: variables.$color-texto-base;
+            margin-bottom: 3rem;
+            max-width: 1200px;
+
+        }
+
+    }
+
+    .card-jesu {
+
         border-radius: 20px;
         overflow: hidden;
-        box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-        border: none;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        border: 1px solid variables.$borde-suave-card ;
         background-color: variables.$color-fondo-alternativo;
         color: variables.$color-texto-base;
-       
-        .card-body-jesu{
+
+        .card-body-jesu {
             padding: 1.5rem;
 
-            .card-title{
+            .card-title {
                 font-size: 35px;
             }
-            .card-text{
-             font-size: 19px;
-             margin-top: 20px;
+
+            .card-text {
+                font-size: 19px;
+                margin-top: 20px;
             }
         }
     }
+}
+
+//Card pequeñas solo título//
+.container {
+    header {
+        margin: 1rem;
+        text-align: center;
+
+        .seccion-titulo {
+            text-transform: uppercase;
+            font-size: 2rem;
+            font-weight: 600;
+            color: variables.$color-texto-base;
+            margin-bottom: 1.5rem;
+
+        }
+
+        .seccion-subtitulo {
+            font-size: 19px;
+            color: variables.$color-texto-base;
+            margin-bottom: 3rem;
+            max-width: 1200px;
+        }
+    }
+
+    .row {
+        .col {
+            .card-chica {
+                border-radius: 20px;
+                overflow: hidden;
+                box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+                border: 1px solid variables.$borde-suave-card ;
+                background-color: variables.$color-fondo-alternativo;
+                color: variables.$color-texto-base;
+
+                img {}
+
+                .card-title {
+                    font-size: 30px;
+
+                }
+            }
+        }
+
+    }
+}
