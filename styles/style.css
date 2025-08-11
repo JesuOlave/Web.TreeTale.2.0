@@ -176,6 +176,35 @@
   margin: 15px;
 }
 
+.info-card-container-sf {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  height: 300px;
+}
+.info-card-container-sf .info-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #4B4F46;
+  width: 1150px;
+}
+.info-card-container-sf .info-card h3 {
+  font-size: 35px;
+  margin: 9px;
+}
+.info-card-container-sf .info-card p {
+  font-size: 19px;
+  margin: 9px;
+}
+.info-card-container-sf .info-card .boton-primario {
+  margin: 15px;
+}
+
 .card-mediana {
   max-width: 1200px;
   width: 100%;
@@ -314,18 +343,89 @@
   font-size: 30px;
 }
 
+.card-texturas {
+  background-color: white;
+  border-radius: 20px;
+  border: 1px solid #E8E8E8;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  margin-bottom: 1.5rem;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.card-texturas .card-body {
+  padding: 1.5rem;
+  color: #4B4F46;
+}
+.card-texturas .card-body .card-title {
+  font-size: 40px;
+}
+.card-texturas .card-body .card-text {
+  font-size: 22px;
+}
+
+.card-btn {
+  background-color: #E8F0ED;
+  color: #4B4F46;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border: 1px solid #E8E8E8;
+  max-width: 1200px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+}
+.card-btn .card-body {
+  padding: 2rem;
+}
+.card-btn .card-body .card-title {
+  font-size: 40px;
+}
 .carrusel-jesu .container {
   max-width: 950px;
+  margin-bottom: 3rem;
+  margin-top: 3rem;
 }
 .carrusel-jesu .container .card {
   color: #4B4F46;
+  border: 1px solid #E8E8E8;
+  border-radius: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  overflow: hidden;
 }
 .carrusel-jesu .container .card .card-header {
   font-size: 25px;
-  background-color: #E8F0ED;
+  font-weight: 600;
+  background-color: white;
+  padding: 1rem 1.5rem;
 }
 .carrusel-jesu .container .card .card-body {
-  background-color: #F3F1EA;
+  font-size: 19px;
+  background-color: white;
+  padding: 1rem 1.5rem;
+}
+.carrusel-jesu .container .card .card-body .blockquote-footer {
+  margin-top: 1.5rem;
+}
+.carrusel-jesu .icono {
+  background-color: #2E7D5E;
+}
+
+.carrusel-estilo {
+  margin-top: 4rem;
+}
+.carrusel-estilo .j-esilo h4 {
+  font-size: 42px;
+  font-weight: 600;
+}
+.carrusel-estilo .j-esilo p {
+  font-size: 28px;
+  font-weight: 400;
 }
 
 /*# sourceMappingURL=style.css.map */
