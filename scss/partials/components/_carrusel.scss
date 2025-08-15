@@ -1,62 +1,28 @@
 @use "../utilities/variables";
-@import "../utilities/mixin";
+@use "../utilities/mixin";
 
-//Carrusel de Cards informativo//
-.carrusel-jesu{
-    .container{
-        max-width: 950px;
-        margin-bottom: 3rem;
-        margin-top: 3rem;
-        
-        .card{
-            color: variables.$color-texto-base;
-            border: 1px solid variables.$borde-suave-card;
-            border-radius: 20px;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-            border-radius: 20px;
-            overflow: hidden;
-    
+/* Carrusel de cards (management) */
+.carrusel-jesu {
+  .container { max-width: 950px; margin: 3rem auto; }
+  .card {
+    color: variables.$color-texto-base;
+    border: 1px solid variables.$borde-suave-card;
+    border-radius: 20px; overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0,0,0,.1);
 
-            .card-header{
-                font-size: 25px;
-                font-weight: 600;
-                background-color: white;
-                padding: 1rem 1.5rem;
-               
-            }
-            .card-body{
-                font-size: 19px;
-                background-color: white;
-                padding: 1rem 1.5rem;
-                .blockquote-footer{
-                    margin-top: 1.5rem;
-                }
-            }
-        }
-    }
-  .icono{
-    background-color: variables.$color-boton-principal ;
+    .card-header { font-size: 25px; font-weight: 600; background-color: #fff; padding: 1rem 1.5rem; }
+    .card-body   { font-size: 19px; background-color: #fff; padding: 1rem 1.5rem; }
+    .blockquote-footer { margin-top: 1.5rem; }
   }
 
+  .icono { background-color: variables.$color-boton-principal; }
 }
 
-//Carrusel tipo banner con texto dentro//
-
-.carrusel-estilo{
-    margin-top: 4rem;
-
-
-    .j-esilo{
-        h4{
-            font-size: 42px;
-            font-weight: 600;
-
-        }
-        p{
-            font-size: 28px;
-            font-weight: 400;
-
-
-        }
-    }
+/* Carrusel tipo banner */
+.carrusel-estilo {
+  margin-top: 4rem;
+  .j-esilo {
+    h4 { font-size: 42px; font-weight: 600; }
+    p  { font-size: 28px; font-weight: 400; }
+  }
 }

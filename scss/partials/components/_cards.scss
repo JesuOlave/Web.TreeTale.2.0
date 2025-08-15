@@ -1,296 +1,167 @@
 @use "../utilities/variables";
-@import "../utilities/mixin";
+@use "../utilities/mixin";
 
-//Bloque titulo+parrafo+boton-principal con fondo de color//
+/* Bloque texto + botón con fondo */
 .info-card-container {
-    @include flex (column, center, center);
-    text-align: center;
-    background-color: variables.$color-fondo-alternativo-dos;
-    width: 100%;
-    height: 300px;
-
-    .info-card {
-        @include flex(column, center, center);
-        color: variables.$color-texto-base;
-        width: 1150px;
-
-        h3 {
-            font-size: 35px;
-            margin: 9px;
-        }
-
-        p {
-            font-size: 19px;
-            margin: 9px;
-
-        }
-
-        .boton-primario {
-            margin: 15px;
-
-        }
-
-    }
+  @include mixin.flex(column, center, center);
+  text-align: center;
+  background-color: variables.$color-fondo-alternativo-dos;
+  width: 100%; min-height: 300px;
+  .info-card {
+    @include mixin.flex(column, center, center);
+    color: variables.$color-texto-base; width: 100%; max-width: 1150px; margin: 0 auto;
+    h3 { font-size: 35px; margin: 9px; }
+    p  { font-size: 19px; margin: 9px; }
+    .boton-primario { margin: 15px; }
+  }
 }
 
-//mismo bloque de arriba pero sf (sin fondo)//
+/* Mismo bloque sin fondo */
 .info-card-container-sf {
-    @include flex (column, center, center);
-    text-align: center;
-    width: 100%;
-    height: 300px;
-
-    .info-card {
-        @include flex(column, center, center);
-        color: variables.$color-texto-base;
-        width: 1150px;
-
-        h3 {
-            font-size: 35px;
-            margin: 9px;
-        }
-
-        p {
-            font-size: 19px;
-            margin: 9px;
-
-        }
-
-        .boton-primario {
-            margin: 15px;
-
-        }
-
-    }
+  @include mixin.flex(column, center, center);
+  text-align: center; width: 100%; min-height: 300px;
+  .info-card {
+    @include mixin.flex(column, center, center);
+    color: variables.$color-texto-base; width: 100%; max-width: 1150px; margin: 0 auto;
+    h3 { font-size: 35px; margin: 9px; }
+    p  { font-size: 19px; margin: 9px; }
+    .boton-primario { margin: 15px; }
+  }
 }
 
+/* Card mediana (img + texto) */
 .card-mediana {
-    max-width: 1200px;
-    width: 100%;
-    margin-bottom: 4rem;
-    margin-top: 4rem;
-    border-radius: 20px;
-    overflow: hidden;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    border: 1px solid variables.$borde-suave-card;
-    color: variables.$color-texto-base;
-    background-color: variables.$color-fondo-alternativo;
+  max-width: 1200px; width: 100%;
+  margin: 4rem auto;
+  border-radius: 20px; overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0,0,0,.1);
+  border: 1px solid variables.$borde-suave-card;
+  color: variables.$color-texto-base;
+  background-color: variables.$color-fondo-alternativo;
 
-    .row {
-        height: 100%;
-    }
+  .row { align-items: stretch; }
+  img { width: 100%; height: 100%; object-fit: cover; display: block; }
 
-    .col-md-6 {
-        height: 100%;
-    }
-
-    img {
-        height: 100%;
-        width: 100%;
-        object-fit: cover;
-        display: block;
-    }
-
-    .card-body {
-        padding: 3rem;
-
-        h3 {
-            font-size: 35px;
-
-        }
-
-        p {
-            font-size: 19px;
-            margin-top: 20px;
-        }
-
-    }
+  .card-body {
+    padding: 3rem;
+    h3 { font-size: 35px; }
+    p  { font-size: 19px; margin-top: 20px; }
+  }
 }
 
-// Card horizontal img+texto+boton //
-
+/* Card horizontal (imagen arriba + texto al centro) */
 .card-horizontal {
-    width: 100%;
-    border: none;
-    border-radius: 0%;
-    overflow: hidden;
-    text-align: center;
-
-    .card-img-top {
-        width: 100%;
-        height: auto;
-        display: block;
-    }
-
-    .card-body {
-        @include flex(column, center, center);
-        padding: 2rem;
-        background-color: white;
-        color: variables.$color-texto-base;
-        padding: 4rem;
-
-        h3 {
-            font-size: 35px;
-            margin-bottom: 1.5rem;
-        }
-
-        p {
-            font-size: 19px;
-            margin-bottom: 1.5rem;
-
-        }
-
-        .boton-primario {
-            margin-top: 1.5rem;
-            margin-bottom: 1rem;
-        }
-    }
+  width: 100%; border: none; border-radius: 0; overflow: hidden; text-align: center;
+  .card-img-top { width: 100%; height: auto; display: block; }
+  .card-body {
+    @include mixin.flex(column, center, center);
+    padding: 4rem; background-color: #fff; color: variables.$color-texto-base;
+    h3 { font-size: 35px; margin-bottom: 1.5rem; }
+    p  { font-size: 19px; margin-bottom: 1.5rem; }
+    .boton-primario { margin-top: 1.5rem; margin-bottom: 1rem; }
+  }
 }
 
-//Card pequeña para blogs//
+/* Cards pequeñas */
 .card-para-blogs {
-    padding: 2rem;
+  padding: 2rem;
 
-    header {
-        margin: 1rem;
-        text-align: center;
+  header {
+    margin: 1rem; text-align: center;
+    h2 { text-transform: uppercase; font-size: 2rem; font-weight: 600; color: variables.$color-texto-base; margin-bottom: 1.5rem; }
+    p  { font-size: 19px; color: variables.$color-texto-base; margin-bottom: 3rem; max-width: 1200px; }
+  }
 
-        h2 {
-            text-transform: uppercase;
-            font-size: 2rem;
-            font-weight: 600;
-            color: variables.$color-texto-base;
-            margin-bottom: 1.5rem;
-        }
-
-        p {
-            font-size: 19px;
-            color: variables.$color-texto-base;
-            margin-bottom: 3rem;
-            max-width: 1200px;
-
-        }
-
-    }
-
-    .card-jesu {
-
-        border-radius: 20px;
-        overflow: hidden;
-        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-        border: 1px solid variables.$borde-suave-card ;
-        background-color: variables.$color-fondo-alternativo;
-        color: variables.$color-texto-base;
-
-        .card-body-jesu {
-            padding: 1.5rem;
-
-            .card-title {
-                font-size: 35px;
-            }
-
-            .card-text {
-                font-size: 19px;
-                margin-top: 20px;
-            }
-        }
-    }
-}
-
-//Card pequeñas solo título//
-.container {
-    header {
-        margin: 1rem;
-        text-align: center;
-
-        .seccion-titulo {
-            text-transform: uppercase;
-            font-size: 2rem;
-            font-weight: 600;
-            color: variables.$color-texto-base;
-            margin-bottom: 1.5rem;
-
-        }
-
-        .seccion-subtitulo {
-            font-size: 19px;
-            color: variables.$color-texto-base;
-            margin-bottom: 3rem;
-            max-width: 1200px;
-        }
-    }
-
-    .row {
-        .col {
-            .card-chica {
-                border-radius: 20px;
-                overflow: hidden;
-                box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-                border: 1px solid variables.$borde-suave-card ;
-                background-color: variables.$color-fondo-alternativo;
-                color: variables.$color-texto-base;
-
-                img {}
-
-                .card-title {
-                    font-size: 30px;
-
-                }
-            }
-        }
-
-    }
-}
-
-.card-texturas {
-    background-color: white;
-    border-radius: 20px;
-    border: 1px solid variables.$borde-suave-card ;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
-    margin-bottom: 1.5rem;
-    max-width: 1200px;
-    margin-left: auto;  
-    margin-right: auto;
-
-    .card-body {
-        padding: 1.5rem;
-        color: variables.$color-texto-base ;
-        .card-title {
-            font-size: 40px;
-
-        }
-
-        .card-text {
-         font-size: 22px;
-        }
-    }
-}
-
-.card-btn{
-
-    background-color: variables.$color-fondo-alternativo-dos;
-    color: variables.$color-texto-base ;
-    border-radius: 20px;
-    overflow: hidden;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  .card-jesu {
+    border-radius: 20px; overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0,0,0,.1);
     border: 1px solid variables.$borde-suave-card;
-    max-width: 1200px;
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 4rem;
-    margin-bottom: 4rem;
+    background-color: variables.$color-fondo-alternativo;
+    color: variables.$color-texto-base;
 
-    .card-body{
-        padding: 2rem;
-        .card-title{
-            font-size: 40px;
-
-        }
-        .card-text{
-
-        }
-        
+    .card-body-jesu {
+      padding: 1.5rem;
+      .card-title { font-size: 35px; }
+      .card-text  { font-size: 19px; margin-top: 20px; }
     }
+  }
+}
+
+/* Cards pequeñas solo título (worklife) */
+.container {
+  header {
+    margin: 1rem; text-align: center;
+    .seccion-titulo   { text-transform: uppercase; font-size: 2rem; font-weight: 600; color: variables.$color-texto-base; margin-bottom: 1.5rem; }
+    .seccion-subtitulo{ font-size: 19px; color: variables.$color-texto-base; margin-bottom: 3rem; max-width: 1200px; }
+  }
+  .row .col .card-chica {
+    border-radius: 20px; overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0,0,0,.1);
+    border: 1px solid variables.$borde-suave-card;
+    background-color: variables.$color-fondo-alternativo;
+    color: variables.$color-texto-base;
+    .card-title { font-size: 30px; }
+  }
+}
+
+/* Card con texturas (environment) */
+.card-texturas {
+  background-color: #fff;
+  border-radius: 20px;
+  border: 1px solid variables.$borde-suave-card;
+  box-shadow: 0 4px 10px rgba(0,0,0,.1);
+  overflow: hidden;
+  margin: 0 auto 1.5rem;
+  max-width: 1200px;
+
+  .card-body {
+    padding: 1.5rem; color: variables.$color-texto-base;
+    .card-title { font-size: 40px; }
+    .card-text  { font-size: 22px; }
+  }
+}
+
+/* Card CTA final (environment) */
+.card-btn {
+  background-color: variables.$color-fondo-alternativo-dos;
+  color: variables.$color-texto-base;
+  border-radius: 20px; overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0,0,0,.1);
+  border: 1px solid variables.$borde-suave-card;
+  max-width: 1200px; text-align: center;
+  margin: 4rem auto;
+
+  .card-body {
+    padding: 2rem;
+    .card-title { font-size: 40px; }
+  }
+}
+
+.seccion-titulo {
+  text-transform: uppercase;
+  font-size: 2rem;
+  font-weight: 600;
+  color: variables.$color-texto-base;
+  margin-bottom: 1.5rem;
+}
+
+.seccion-subtitulo {
+  font-size: 19px;
+  color: variables.$color-texto-base;
+  margin-bottom: 3rem;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Cards pequeñas (solo título) */
+.card-chica {
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  border: 1px solid variables.$borde-suave-card;
+  background-color: variables.$color-fondo-alternativo;
+  color: variables.$color-texto-base;
+
+  .card-title { font-size: 30px; }
 }

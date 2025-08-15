@@ -1,0 +1,146 @@
+@use "../utilities/variables";
+
+/*  ≤ 992px (lg)  */
+@media (max-width: 992px) {
+  /* Banner */
+  .texto-card-banner { max-width: 70%; padding-left: 1.5rem; }
+  .texto-card-banner .card-title { font-size: 3rem; line-height: 1.15; }
+
+  /* Bloques de texto centrados */
+  .info-card-container,
+  .info-card-container-sf {
+    height: auto;
+    padding: 2rem 1.25rem;
+  }
+  .info-card-container .info-card,
+  .info-card-container-sf .info-card {
+    width: 100%;
+    max-width: 900px;
+  }
+
+  /* Card mediana (img + texto) */
+  .card-mediana { margin: 3rem auto; }
+  .card-mediana .card-body { padding: 2.25rem; }
+  .card-mediana .card-body h3 { font-size: 32px; }
+
+  /* Tabla */
+  .tabla-estilo { padding: 1.5rem 1rem; }
+  .tabla-estilo th { font-size: 28px; }
+  .tabla-estilo td h3 { font-size: 24px; }
+  .tabla-estilo td p { font-size: 18px; }
+
+  /* Card horizontal (banner inferior) */
+  .card-horizontal .card-body { padding: 2.5rem; }
+  .card-horizontal .card-body h3 { font-size: 32px; }
+
+  /* Cards pequeñas */
+  .card-para-blogs header h2,
+  .seccion-titulo { font-size: 1.75rem; }
+  .card-para-blogs header p,
+  .seccion-subtitulo { font-size: 18px; }
+
+  /* Carrusel captions grandes */
+  .carrusel-estilo .j-esilo h4 { font-size: 36px; }
+  .carrusel-estilo .j-esilo p  { font-size: 24px; }
+
+  /* Buscador del navbar */
+  .buscador-form { gap: .5rem; }
+  .buscador { min-width: 220px; }
+}
+
+/* ≤ 768px (md) */
+@media (max-width: 768px) {
+  /* Banner */
+  .texto-card-banner { max-width: 85%; padding-left: 1rem; }
+  .texto-card-banner .card-title { font-size: 2.25rem; }
+
+  /* Encabezados de páginas */
+  .titulo-page { padding: 0 1rem; }
+  .titulo-page h2 { font-size: 2.25rem; }
+  .titulo-page p { font-size: 18px; }
+
+  /* Card mediana */
+  .card-mediana .row { display: flex; flex-direction: column; }
+  .card-mediana img { height: 280px; object-fit: cover; }
+  .card-mediana .card-body { padding: 1.75rem; }
+  .card-mediana .card-body h3 { font-size: 28px; }
+  .card-mediana .card-body p { font-size: 18px; }
+
+  /* Tabla */
+  .tabla-estilo { padding: 1.25rem .75rem; }
+  .tabla-estilo th { font-size: 24px; }
+  .tabla-estilo td { padding: .75rem; }
+  .tabla-estilo td h3 { font-size: 22px; }
+  .tabla-estilo td p { font-size: 17px; }
+
+  /* Card horizontal */
+  .card-horizontal .card-body { padding: 2rem 1.25rem; }
+  .card-horizontal .card-body h3 { font-size: 28px; }
+  .card-horizontal .card-body p { font-size: 18px; }
+
+  /* Cards pequeñas */
+  .card-chica .card-title,
+  .card-jesu .card-title { font-size: 26px; }
+
+  /* Carrusel */
+  .carrusel-jesu .container { max-width: 680px; }
+  .carrusel-estilo .j-esilo h4 { font-size: 28px; }
+  .carrusel-estilo .j-esilo p  { font-size: 20px; }
+
+  /* Footer */
+  .estilo-footer-jesu .logo-footer { max-width: 120px; }
+  .estilo-footer-jesu h4 { font-size: 22px; }
+}
+
+/* ≤ 576px (sm)*/
+@media (max-width: 576px) {
+  /* Banner*/
+  .texto-card-banner { max-width: 92%; padding-left: .75rem; padding-right: .75rem; }
+  .texto-card-banner .card-title { font-size: 1.9rem; }
+
+  /* Botones */
+  .boton-primario,
+  .boton-secundario { width: 100%; }
+
+  /* Bloques de texto */
+  .info-card-container,
+  .info-card-container-sf { padding: 1.5rem 1rem; }
+  .info-card-container .info-card h3,
+  .info-card-container-sf .info-card h3 { font-size: 28px; }
+  .info-card-container .info-card p,
+  .info-card-container-sf .info-card p { font-size: 17px; }
+
+  /* Card mediana */
+  .card-mediana { margin: 2rem auto; }
+  .card-mediana img { height: 220px; }
+  .card-mediana .card-body { padding: 1.25rem; }
+  .card-mediana .card-body h3 { font-size: 24px; }
+  .card-mediana .card-body p { font-size: 16.5px; }
+
+  /* Tabla scroll horizontal */
+  .tabla-estilo { padding: 1rem .5rem; }
+  .tabla-estilo table { display: block; overflow-x: auto; }
+  .tabla-estilo th { font-size: 20px; white-space: nowrap; }
+  .tabla-estilo td h3 { font-size: 20px; }
+  .tabla-estilo td p { font-size: 16px; }
+
+  /* Cards pequeñas / blogs */
+  .card-para-blogs { padding: 1rem; }
+  .card-para-blogs header h2,
+  .seccion-titulo { font-size: 1.5rem; }
+  .card-para-blogs header p,
+  .seccion-subtitulo { font-size: 16.5px; }
+
+  /* Card horizontal */
+  .card-horizontal .card-body { padding: 1.25rem; }
+  .card-horizontal .card-body h3 { font-size: 24px; }
+  .card-horizontal .card-body p { font-size: 16.5px; }
+
+  /* Carruseles */
+  .carrusel-estilo .j-esilo h4 { font-size: 22px; }
+  .carrusel-estilo .j-esilo p  { font-size: 16px; }
+
+  /* Navbar */
+  .buscador-form { flex-direction: column; align-items: stretch; gap: .5rem; }
+  .buscador { width: 100%; min-width: 0; }
+}

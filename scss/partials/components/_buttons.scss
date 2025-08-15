@@ -1,26 +1,52 @@
 @use "../utilities/variables";
+@use "../utilities/mixin";
 
-.boton{
-    width: 30%;
-    margin: auto;
-    font-weight: 600;
-    color: white;
-    border-color: variables.$color-fondo-alternativo;
+
+.boton {
+  display: inline-block;
+  padding: 0.65rem 1.25rem;
+  border: 1px solid transparent; 
+  border-radius: 0.375rem;
+  font-weight: 600;
+  color: #fff;
+  text-align: center;
+  line-height: 1.2;
+  cursor: pointer;
+  transition: background-color .2s ease, border-color .2s ease, box-shadow .2s ease, transform .02s ease;
+  text-decoration: none;
 }
 
-.boton-primario{
-@extend .boton;
-background-color: variables.$color-boton-principal;
-&:hover{
-    background-color: variables.$hover-boton-principal;
-    border-color: variables.$color-fondo-alternativo;
-} 
-&:active{
-background-color: variables.$active-boton-principal ;
-}
-padding-top: 0.65rem;
-padding-bottom: 0.65rem;
-font-size: 18px;
-box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+.boton:focus-visible {
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgba(90,139,160,.35); 
 }
 
+/* Click */
+.boton:active { transform: translateY(1px); }
+
+/* Estado disabled */
+.boton:disabled,
+.boton[disabled],
+.boton.is-disabled {
+  opacity: .6;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+/* Botón Primario */
+.boton-primario {
+  @extend .boton;
+  background-color: variables.$color-boton-principal;
+  border-color: transparent; 
+}
+.boton-primario:hover  { background-color: variables.$hover-boton-principal; }
+.boton-primario:active { background-color: variables.$active-boton-principal; }
+
+/* Botón Secundario */
+.boton-secundario {
+  @extend .boton;
+  background-color: variables.$color-boton-secundario;
+  border-color: variables.$color-bordes-y-lineas; 
+}
+.boton-secundario:hover  { background-color: variables.$hover-boton-secundario; }
+.boton-secundario:active { background-color: variables.$active-boton-secundario; }

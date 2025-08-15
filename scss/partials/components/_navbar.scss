@@ -1,25 +1,18 @@
 @use "../utilities/variables";
+@use "../utilities/mixin";
 
-.bg-estilo-jesu{
-    background-color: variables.$color-fondo-alternativo;
-}
 
-.logo-navbar{
-    width: 95px
-}
+//Fondo
+.bg-estilo-jesu { background-color: variables.$color-fondo-alternativo; }
 
-.boton-secundario{
-    background-color: variables.$color-boton-secundario;
-    color: #FFFF;
-    border-color: variables.$color-bordes-y-lineas ;
-    &:hover{
-        color:#FFFF ;
-        background-color: variables.$hover-boton-secundario;
-         border-color: variables.$color-bordes-y-lineas;
-    }
-}
-.buscador:focus{
-box-shadow: variables.$color-bordes-y-lineas;
-outline: none;
+//Logo
+.logo-navbar { width: 95px; }
+
+//Buscador
+.buscador { border-color: variables.$color-bordes-y-lineas; }
+.buscador:focus {
+  border-color: variables.$color-boton-secundario;
+  box-shadow: 0 0 0 0.2rem rgba(90,139,160,0.25);
+  outline: none;
 }
 

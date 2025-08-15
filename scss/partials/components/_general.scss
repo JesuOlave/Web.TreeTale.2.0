@@ -1,83 +1,56 @@
 @use "../utilities/variables";
+@use "../utilities/mixin";
 
 
 
-.texto-card-jesu{
-    align-items: center;
+/* Texto en cards con imagen + texto */
+.texto-card-jesu { align-items: center; }
+
+/* Banner principal */
+.banner-estilo-jesu { border: variables.$color-fondo-alternativo; }
+
+.texto-card-banner {
+  display: flex; flex-direction: column;
+  justify-content: center; align-items: flex-start;
+  padding-left: 2rem; max-width: 60%;
+}
+.card-title { font-size: 4.5rem; }
+
+.titulo-h1{
+  color: white;
 }
 
-//Banner principal//
-.banner-estilo-jesu{
-    border: variables.$color-fondo-alternativo ;
-}
-.texto-card-banner{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    padding-left: 2rem;
-    max-width: 60%;
-}
-.card-title{
-    font-size: 4.5rem;
-}
-.h2{
-    font-size: 2rem;
+/* Tabla */
+.tabla-estilo {
+  max-width: 1200px; margin: 0 auto; padding: 2rem 2rem;
+
+  table { width: 100%; border-collapse: separate; border-spacing: 0 1rem; }
+  th {
+    font-size: 34px; font-weight: 600;
+    color: variables.$color-texto-base; padding-bottom: 1rem;
+  }
+  td {
+    padding: 1rem; vertical-align: top;
+    h3 { font-size: 27px; margin-bottom: .5rem; color: variables.$color-texto-base; }
+    p { font-size: 19px; line-height: 1.5; color: variables.$color-texto-base; }
+  }
 }
 
-//Tabla//
-.tabla-estilo{
+/* Encabezado de las paginas */
+.titulo-page {
+  text-align: center; margin: 2.5rem auto 2rem; max-width: 1000px;
+  color: variables.$color-texto-base;
+  h2 { font-size: 3.5rem; margin-bottom: 2rem; }
+  p  { font-size: 19px; }
+}
+
+.seccion-contenedor {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 2rem 2rem;
-  
-    table{
-        width: 100%;
-        border-collapse: separate;
-        border-spacing: 0 1rem;
-        
-        th{
-            font-size: 34px;
-            font-weight: 600;
-            color: variables.$color-texto-base;
-            padding-bottom: 1rem;
-    
-        }
-        }
-     td{
-        padding: 1rem;
-        vertical-align: top;
-            h3{
-                font-size: 27px;
-                margin-bottom: 0.5rem;
-                color: variables.$color-texto-base;
-            }
-            p{
-                font-size: 19px;
-                line-height: 1.5;
-                color: variables.$color-texto-base;
-            }
-
-            }
-        }
-    
-//encabezado de pages//
-.titulo-page{
-    text-align: center;
-    margin-top: 2.5rem;
-    margin-bottom: 2rem;
-    max-width: 1000px;
-    color: variables.$color-texto-base;
-
-
-    h2{
-        font-size: 3.5rem;
-        margin-bottom: 2rem;
-
-    }
-    p{
-        font-size: 19px;
-
-    }
+  padding: 3rem 1rem; 
 }
-    
+
+.seccion-cabecera {
+  text-align: center;
+  margin-bottom: 2rem;
+}

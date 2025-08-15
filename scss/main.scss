@@ -1,17 +1,18 @@
-//BASE
+
+@use "./partials/utilities/variables";
+@use "./partials/utilities/mixin";
+
+//BASE//
 @use "./partials/base/reset";
-@use "./partials/base/tipografia";
+@use "./partials/base/tipografias";
 
-//COMPONENTS
-
+//COMPONENTS//
 @use "./partials/components/navbar";
-@use "./partials/components/general";
-@use "./partials/components/footer";
 @use "./partials/components/buttons";
+@use "./partials/components/general";
 @use "./partials/components/cards";
 @use "./partials/components/carrusel";
+@use "./partials/components/footer";
 
-
-
-
-
+//RESPONSIVE//
+@use "./partials/components/responsive";
