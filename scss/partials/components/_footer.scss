@@ -6,6 +6,9 @@
   background-color: variables.$color-fondo-alternativo;
   color: variables.$color-texto-base;
   border-top: 1px solid variables.$color-bordes-y-lineas;
+  .container{
+    margin-top: 2rem;
+  }
 
   .logo-footer { max-width: 150px; }
 
